@@ -1,7 +1,7 @@
 from flask import Flask, request, render_template
 import json
 import time
-Import requests
+import requests
 
 q = input("Enter your picture request : ")
 body = json.dumps(
