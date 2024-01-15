@@ -12,7 +12,7 @@ body = json.dumps(
 )
 headers = {
 	'Authorization': 'Token r8_NOcgCkrCL7hvJJ0UsGwEzmByzRO3qrg31iCmO',
-	'Content-Type': 'application/json’
+	'Content-Type': 'application/json'
 }
 output = requests.post('https://api.replicate.com/v1/predictions',data=body,headers=headers)
 time.sleep(10)
