@@ -1,6 +1,7 @@
 from flask import Flask, request, render_template
 import json
 import time
+pip install requests
 import requests
 
 q = input("Enter your picture request : ")
