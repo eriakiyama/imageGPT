@@ -1,7 +1,7 @@
-from flask import Flask, request, render_template
+#from flask import Flask, request, render_template
+pip install replicate
 import json
 import time
-pip install requests
 import requests
 
 q = input("Enter your picture request : ")
