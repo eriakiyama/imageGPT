@@ -1,5 +1,5 @@
 #from flask import Flask, request, render_template
-pip install replicate
+
 import json
 import time
 import requests
