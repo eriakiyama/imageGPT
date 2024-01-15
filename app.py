@@ -1,5 +1,5 @@
 from flask import Flask, request, render_template
-import json, time, requests
+import json, time, request, os
 
 app = Flask(__name__)
 
@@ -21,7 +21,7 @@ def index():
         }
         )
         
-        output = requests.post('https://api.replicate.com/v1/predictions',data=body,headers=headers)
+        output = request.post('https://api.replicate.com/v1/predictions',data=body,headers=headers)
         time.sleep(10) #online/in internet we need it, but now dont need
         get_url = output.json()['urls']['get']
         get_result = requests.post(get_url,headers=headers).json()['output']
